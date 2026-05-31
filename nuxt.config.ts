@@ -1,13 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
     '@nuxt/ui',
-    '@comark/nuxt',
-    '@nuxthub/core',
-    'nuxt-auth-utils',
-    'nuxt-charts',
-    'nuxt-csurf'
+    'nuxt-auth-utils'
   ],
 
   runtimeConfig: {
@@ -22,35 +17,34 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  app: {
+    head: {
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { 
+          rel: 'stylesheet', 
+          href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap'
+        }
+      ]
+    }
+  },
+
   experimental: {
     viewTransition: true
   },
 
-  compatibilityDate: '2024-07-11',
+  compatibilityDate: '2025-01-01',
 
-  nitro: {
-    experimental: {
-      openAPI: true
-    }
-  },
-
-  hub: {
-    db: 'sqlite',
-    blob: true
+  ui: {
+    primary: '#1456f0',
+    gray: 'neutral',
+    icons: 'ph'
   },
 
   vite: {
     optimizeDeps: {
       include: ['striptags']
-    }
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
     }
   }
 })

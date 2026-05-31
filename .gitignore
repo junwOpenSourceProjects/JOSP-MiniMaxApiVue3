@@ -13,18 +13,17 @@ node_modules
 logs
 *.log
 
-# Misc
+# Editor
 .DS_Store
 .fleet
 .idea
+.vscode
+.history
+.vercel
 
 # Local env files
 .env
 .env.*
 !.env.example
-
-# VSC
-.history
-.vercel
 .env*.local
 Thumbs.db

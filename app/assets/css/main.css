@@ -2,17 +2,43 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-serif: 'Poppins', sans-serif;
 }
 
-@layer base {
-  body {
-    @apply bg-neutral-50 dark:bg-neutral-950;
-  }
-}
-
+/* MiniMax Design System Colors */
 :root {
+  /* Brand Colors */
+  --color-brand-blue: #1456f0;
+  --color-brand-light: #3daeff;
+  --color-brand-pink: #ea5ec1;
+
+  /* Text Colors */
+  --color-text-primary: #222222;
+  --color-text-secondary: #45515e;
+  --color-text-muted: #8e8e93;
+  --color-text-dark: #181e25;
+
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f0f0f0;
+  --color-bg-dark: #181e25;
+
+  /* Border Colors */
+  --color-border-light: #f2f3f5;
+  --color-border-gray: #e5e7eb;
+
+  /* Shadow Colors */
+  --shadow-brand: rgba(44, 30, 116, 0.16);
+  --shadow-subtle: rgba(0, 0, 0, 0.08);
+
   --ui-container: var(--container-3xl);
+}
+
+html.dark {
+  --color-bg-primary: #181e25;
+  --color-text-primary: #ffffff;
 }
 
 html.dark .shiki span {
@@ -21,4 +47,11 @@ html.dark .shiki span {
   font-style: var(--shiki-dark-font-style) !important;
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+@layer base {
+  body {
+    @apply bg-[#ffffff] dark:bg-[#181e25];
+    color: #222222;
+  }
 }

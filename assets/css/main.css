@@ -1,0 +1,49 @@
+/* MiniMax Design System - Global Styles */
+
+:root {
+  --color-brand: #1456f0;
+  --color-brand-light: #3b82f6;
+  --color-brand-hover: #2563eb;
+  --color-brand-pink: #ea5ec1;
+
+  --color-bg: #ffffff;
+  --color-bg-dark: #181e25;
+  --color-bg-secondary: #f0f0f0;
+  --color-bg-glass: hsla(0, 0%, 100%, 0.4);
+
+  --color-text: #222222;
+  --color-text-secondary: #45515e;
+  --color-text-muted: #8e8e93;
+  --color-text-light: #5f5f5f;
+
+  --color-border: #e5e7eb;
+  --color-border-light: #f2f3f5;
+
+  --color-success-bg: #e8ffea;
+
+  --shadow-sm: rgba(0, 0, 0, 0.08) 0px 4px 6px;
+  --shadow-md: rgba(0, 0, 0, 0.08) 0px 0px 22.576px;
+  --shadow-brand: rgba(44, 30, 116, 0.16) 0px 0px 15px;
+  --shadow-brand-offset: rgba(44, 30, 116, 0.11) 6.5px 2px 17.5px;
+  --shadow-elevated: rgba(36, 36, 36, 0.08) 0px 12px 16px -4px;
+
+  --font-ui: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Outfit', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mid: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mid { font-family: var(--font-mid); }
+.font-ui { font-family: var(--font-ui); }
